@@ -1,22 +1,19 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-const linkStyle = {
-  marginRight: 15,
-};
-
 const Header= () => (
   <div>
     <Link href="/">
-      <HeaderLink style={linkStyle}>Home</HeaderLink>
+      <HeaderLink>Home</HeaderLink>
     </Link>
     <Link href="/about">
-      <HeaderLink style={linkStyle}>About</HeaderLink>
+      <HeaderLink>About</HeaderLink>
     </Link>
   </div>
 );
 
 const HeaderLink = styled.a`
+  cursor: pointer;
   margin-right: 15px;
 `;
 
